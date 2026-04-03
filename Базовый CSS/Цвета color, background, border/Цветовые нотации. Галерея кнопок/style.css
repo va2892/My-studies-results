@@ -1,0 +1,206 @@
+:root {
+    --btn-primary: #4B0082; 
+    --btn-primary-hover: rgb(100, 0, 170);
+    --btn-primary-active: rgba(75, 0, 130, 0.8);
+    --btn-primary-disabled: plum;
+
+    --btn-secondary: #2F4F4FFF;
+    --btn-secondary-hover: hsl(180, 25%, 25%);
+    --btn-secondary-active: hsla(180, 25%, 25%, 0.9);
+    --btn-secondary-disabled: rgb(128, 128, 128);
+
+    --btn-success: hsl(120, 60%, 35%);
+    --btn-success-hover: #006400FF;
+    --btn-success-active: rgb(0, 85, 0);
+    --btn-success-disabled: hsla(120, 60%, 35%, 0.6);
+
+    --btn-error: rgb(178, 34, 34);
+    --btn-error-hover: hsla(0, 100%, 30%, 0.9);
+    --btn-error-active: #8B0000;
+    --btn-error-disabled: rosybrown;
+
+    --text-desc: #666666;
+    --text-head: #2D3748;
+    --shadow-primary: #0000000D;
+    --shadow-secondary: #0000001A;
+    --background-primary: #C3CFE2;
+    --background-secondary: #F8FAFC;
+}
+
+body {
+    margin: 0;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    background: var(--background-primary);
+}
+
+.page {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 498.52px;
+    height: 1956px;
+    border-radius: 16px;
+    padding: 40px;
+    gap: 24px;
+    background: white;
+    box-shadow: 0px 10px 30px 0px var(--shadow-secondary);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 418.52px;
+    height: 451px;
+    border-radius: 12px;
+    padding: 25px;
+    gap: 20px;
+    background: var(--background-secondary);
+}
+
+.heading {
+    margin: 0;
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--text-head);
+}
+
+.desc {
+    margin: 0;
+    font-family: Tahoma;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--text-desc);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 368.52px;
+    height: 313px;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 368.52px;
+    height: 67px;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    background: white;
+    box-shadow: 0px 2px 4px 0px var(--shadow-primary);
+}
+
+.item-head {
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 14.4px;
+    line-height: 100%;
+    color: var(--text-head);
+}
+
+.item-desc {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 12.8px;
+    line-height: 100%;
+    color: var(--text-desc);
+}
+
+.item-button {
+    margin-left: auto;
+    width: 200px;
+    height: 43px;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    border: 0;
+}
+
+button[data-test-id="btn-primary"] {
+    background: var(--btn-primary);
+}
+
+button[data-test-id="btn-primary-hover"] {
+    background: var(--btn-primary-hover);
+}
+
+button[data-test-id="btn-primary-active"] {
+    background: var(--btn-primary-active);
+}
+
+button[data-test-id="btn-primary-disabled"] {
+    background: var(--btn-primary-disabled);
+}
+
+button[data-test-id="btn-secondary"] {
+    background: var(--btn-secondary);
+}
+
+button[data-test-id="btn-secondary-hover"] {
+    background: var(--btn-secondary-hover);
+}
+
+button[data-test-id="btn-secondary-active"] {
+    background: var(--btn-secondary-active);
+}
+
+button[data-test-id="btn-secondary-disabled"] {
+    background: var(--btn-secondary-disabled);
+}
+
+button[data-test-id="btn-success"] {
+    background: var(--btn-success);
+}
+
+button[data-test-id="btn-success-hover"] {
+    background: var(--btn-success-hover);
+}
+
+button[data-test-id="btn-success-active"] {
+    background: var(--btn-success-active);
+}
+
+button[data-test-id="btn-success-disabled"] {
+    background: var(--btn-success-disabled);
+}
+
+button[data-test-id="btn-error"] {
+    background: var(--btn-error);
+}
+
+button[data-test-id="btn-error-hover"] {
+    background: var(--btn-error-hover);
+}
+
+button[data-test-id="btn-error-active"] {
+    background: var(--btn-error-active);
+}
+
+button[data-test-id="btn-error-disabled"] {
+    background: var(--btn-error-disabled);
+}

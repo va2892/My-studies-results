@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    width: 1920px;
+    height: 760px;
+}
+
+.type1 {
+    background: linear-gradient(90deg, #25AAE1 0%, #40E495 33.33%, #30DD8A 66.67%, #2BB673 100%);
+    box-shadow: 0px 4px 15px 0px #31C4BEBF;  
+}
+
+.type2 {
+    background: linear-gradient(90deg, #F5CE62 0%, #E43603 33.33%, #FA7199 66.67%, #E85A19 100%);
+    box-shadow: 0px 4px 15px 0px #E5420ABF;
+}
+
+.type3 {
+    background: linear-gradient(90deg, #667EEA 0%, #764BA2 33.33%, #6B8DD6 66.67%, #8E37D7 100%);
+    box-shadow: 0px 4px 15px 0px #744FA8BF;
+}
+
+.type4 {
+    background: linear-gradient(90deg, #009245 0%, #FCEE21 33.33%, #00A8C5 66.67%, #D9E021 100%);
+    box-shadow: 0px 4px 15px 0px #53B039BF;
+}
+
+.type5 {
+    background: linear-gradient(90deg, #6253E1 0%, #852D91 33.33%, #A3A1FF 66.67%, #F24645 100%);
+    box-shadow: 0px 4px 15px 0px #7E34A1BF;
+}
+
+.type6 {
+    background: linear-gradient(90deg, #29323C 0%, #485563 33.33%, #2B5876 66.67%, #4E4376 100%);
+    box-shadow: 0px 4px 15px 0px #2D3641BF;
+}
+
+.type7 {
+    background: linear-gradient(90deg, #25AAE1 0%, #4481EB 33.33%, #04BEFE 66.67%, #3F86ED 100%);
+    box-shadow: 0px 4px 15px 0px #4184EABF;
+}
+
+.type8 {
+    background: linear-gradient(90deg, #ED6EA0 0%, #EC8C69 33.33%, #F7186A 66.67%, #FBB03B 100%);
+    box-shadow: 0px 4px 15px 0px #EC7495BF;
+}
+
+.gradient-button {
+    margin-top: 20px;
+    margin-right: 1700px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    border: 0;
+    width: 200px;
+    height: 55px;
+    padding-top: 18.5px;
+    padding-bottom: 19.5px;
+    border-radius: 50px;
+    background-size: 300% 100%;
+    transition: background-position 0.5s ease-in-out;
+
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.gradient-button:hover {
+    background-position: -200px;
+    background-size: 300% 100%;
+}

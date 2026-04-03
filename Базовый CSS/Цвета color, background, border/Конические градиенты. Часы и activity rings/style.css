@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+body {
+    margin: 0;
+    background: #1A1A1A;
+}
+
+.container {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: conic-gradient(
+      #FE6B6C 0deg 30deg,
+      #4ECDC4 30deg 90deg,
+      #45B7D1 90deg 180deg,
+      #96CEB4 180deg 270deg,
+      #FDCA57 270deg 360deg
+    );
+    position: relative;
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: #2A2A2A;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+.hand {
+    position: absolute;
+    width: 2px;
+    top: 100px;
+    left: 100px;
+    transform-origin: bottom center;
+    background: white;
+    z-index: 2;
+}
+
+.hour {
+    height: 40px;
+    width: 4px;
+    border-radius: 5px;
+    transform: translate(-50%, -100%) rotate(45deg);
+}
+
+.minute {
+    height: 55px;
+    border-radius: 5px;
+    transform: translate(-50%, -100%) rotate(180deg);
+}
+
+.activity {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.ring {
+    position: absolute;
+    border-radius: 100px;
+}
+
+.steps {
+    inset: 0;
+    background-image: conic-gradient(
+        #FE0980 0deg 280deg, 
+        #1A1A1A 280deg 360deg
+    );
+    mask: radial-gradient(farthest-side, transparent 85%, #1A1A1A 85%);
+}
+
+.kcal {
+    inset: 25px;
+    background: conic-gradient(
+        #05FF80 0deg 200deg, 
+        #1A1A1A 200deg 360deg
+    );
+    mask: radial-gradient(farthest-side, transparent 80%, #1A1A1A 80%);
+}
+
+.sleep {
+    inset: 50px;
+    background: conic-gradient(
+        #7bff00 0deg 160deg, 
+        #1A1A1A 160deg 360deg
+    );
+    mask: radial-gradient(farthest-side, transparent 70%, #1A1A1A 70%);
+}
+
+.progress {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: conic-gradient(
+        #1A1A1A 0deg 90deg,
+        #FD4657 90deg 324deg,
+        #1A1A1A 324deg 360deg
+    );
+    position: relative;
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    inset: 30px;
+    background: #1A1A1A;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+.info span {
+    position: absolute;
+    top: 77.5px;
+    left: 76px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 22px;
+    z-index: 2;
+    color: #FD4657;
+}
+
+.info small {
+    position: absolute;
+    top: 109px;
+    left: 66px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    z-index: 2;
+    color: #888888;
+}

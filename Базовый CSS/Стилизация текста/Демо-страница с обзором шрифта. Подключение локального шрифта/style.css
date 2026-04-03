@@ -1,0 +1,492 @@
+@font-face {
+    font-family: Jost-Light;
+    font-weight: 300;
+    src: url('./fonts/Jost-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Italic;
+    
+    font-weight: 300;
+    src: url('./fonts/Jost-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Medium;
+    font-weight: 500;
+    src: url('./fonts/Jost-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Regular;
+    font-weight: 400;
+    src: url('./fonts/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Thin;
+    font-weight: 100;
+    src: url('./fonts/Jost-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Bold;
+    font-weight: 700;
+    src: url('./fonts/Jost-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Black;
+    font-weight: 900;
+    src: url('./fonts/Jost-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Light-Italic;
+    font-weight: 300;
+    src: url('./fonts/Jost-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Medium-Italic;
+    font-weight: 500;
+    src: url('./fonts/Jost-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Jost-Bold-Italic;
+    font-weight: 700;
+    src: url('./fonts/Jost-BoldItalic.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background: #FAFAFA;
+}
+
+.page {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 3193.22px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+}
+
+.container {
+    margin-top: 25px;
+    padding: 30px;
+    width: 900px;
+    height: 328px;
+    background: #F8F9FA;
+}
+
+.paragraph {
+    margin-top: 25px;
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 44px;
+    background: #ECF0F1;
+    border-left: 4px solid #3498DB;
+}
+
+.group1 {
+    text-align: center;
+}
+
+.group2 {
+    margin: 35px 0px 35px 0px;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+
+.group3 {
+    margin: 15px 0px 15px 0px;
+    color: #2C3E50;
+}
+
+.group4 {
+    font-size: 17.6px;
+    line-height: 28.16px;
+    color: #2C3E50;
+}
+
+.group5 {
+    font-size: 17.6px;
+    line-height: 28.16px;
+}
+
+.group6 {
+    font-family: Jost-Regular;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.group7 {
+    margin: 10px 0px 30px 0px;
+    font-size: 16px;
+}
+
+.group_h7 {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 17.6px;
+    line-height: 28.16px;
+    color: #2C3E50;
+}
+
+#head1 {
+    position: absolute;
+    width: 960px;
+    height: 206.16px;
+    top: 40px;
+    left: 20px;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+#sec2 {
+    position: absolute;
+    width: 960px;
+    height: 349.56px;
+    top: 306.16px;
+    left: 20px;
+}
+
+#sec3 {
+    position: absolute;
+    width: 960px;
+    height: 587.73px;
+    top: 705.78px;
+    left: 20px; 
+}
+
+#sec4 {
+    position: absolute;
+    width: 960px;
+    height: 335px;
+    top: 1343.58px;
+    left: 20px;
+}
+
+#sec5 {
+    position: absolute;
+    width: 960px;
+    height: 241px;
+    top: 1723.48px;
+    left: 20px;
+}
+
+#sec6 {
+    position: absolute;
+    width: 960px;
+    height: 343px;
+    top: 2011.11px;
+    left: 20px;
+}
+
+#sec7 {
+    position: absolute;
+    width: 960px;
+    height: 459px;
+    top: 2401.33px;
+    left: 20px;
+}
+
+#sec8 {
+    position: absolute;
+    width: 960px;
+    height: 246px;
+    top: 2907.19px;
+    left: 20px;
+}
+
+#el_1-h {
+    margin: 0;
+    font-family: Jost-Light;
+    font-size: 64px;
+    line-height: 102.4px;
+    letter-spacing: -2px;
+    color: #2C3E50;
+}
+
+#el_1-1 {
+    margin: 10px 0px 6px 0px;
+    font-family: Jost-Italic;
+    font-size: 19.2px;
+    line-height: 30.72px;
+    color: #666666;
+}
+
+#el_1-2 {
+    margin: 0;
+    font-family: Jost-Light;
+    font-size: 14.4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+#el_2-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_2-1 {
+    font-family: Jost-Regular;
+    letter-spacing: 3px;
+    color: #2C3E50;
+}
+
+#el_2-2 {
+    font-family: Jost-Light;
+    letter-spacing: 2px;
+    color: #34495E;
+}
+
+#el_2-3 {
+    font-family: Jost-Medium;
+    letter-spacing: 4px;
+    color: #E74C3C;
+}
+
+#el_2-4 {
+    font-family: Jost-Regular;
+    letter-spacing: 1px;
+    color: #8E44AD;
+}
+
+#el_3-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_3-1 {
+    margin-top: 25px;
+    font-family: Jost-Regular;
+    font-size: 12px;
+    line-height: 19.2px;
+}
+
+#el_3-2 {
+    font-family: Jost-Light;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+
+#el_3-3 {
+    font-family: Jost-Regular;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+#el_3-4 {
+    font-family: Jost-Medium;
+    font-size: 18px;
+    line-height: 28.8px;
+}
+
+#el_3-5 {
+    font-family: Jost-Regular;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#el_3-6 {
+    font-family: Jost-Light;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+
+#el_3-7 {
+    font-family: Jost-Medium;
+    font-size: 32px;
+    line-height: 51.2px;
+}
+
+#el_3-8 {
+    font-family: Jost-Light;
+    font-size: 48px;
+    line-height: 76.8px;
+}
+
+#el_3-9 {
+    font-family: Jost-Thin;
+    font-size: 64px;
+    line-height: 102.4px;
+}
+
+#el_4-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_4-1 {
+    margin-top: 25px;
+    font-family: Jost-Thin;
+    color: #7F8C8D;
+}
+
+#el_4-2 {
+    font-family: Jost-Light;
+    color: #34495E;
+}
+
+#el_4-3 {
+    font-family: Jost-Regular;
+}
+
+#el_4-4 {
+    font-family: Jost-Medium;
+}
+
+#el_4-5 {
+    font-family: Jost-Bold;
+}
+
+#el_4-6 {
+    font-family: Jost-Black;
+}
+
+#el_5-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_5-1 {
+    margin-top: 25px;
+    font-family: Jost-Light-Italic;
+    color: #6C5CE7;
+}
+
+#el_5-2 {
+    font-family: Jost-Italic;
+    color: #A29BFE;
+}
+
+#el_5-3 {
+    font-family: Jost-Medium-Italic;
+    color: #74B9FF;
+}
+
+#el_5-4 {
+    font-family: Jost-Bold-Italic;
+    color: #0984E3;
+}
+
+#el_6-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_6-1 {
+    margin-top: 25px;
+    color: #2C3E50;
+}
+
+#el_6-2 {
+    text-transform: uppercase;
+    color: #E74C3C;
+}
+
+#el_6-3 {
+    text-transform: lowercase;
+    color: #F39C12;
+}
+
+#el_6-4 {
+    text-transform: capitalize;
+    color: #27AE60;
+}
+
+#el_6-5 {
+    font-variant: small-caps;
+    color: #8E44AD;
+}
+
+#el_6-6 {
+    letter-spacing: 4px;
+    color: #3498DB;
+}
+
+#el_6-7 {
+    word-spacing: 8px;
+    color: #E67E22;
+}
+
+#el_7-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_7-1 {
+    font-family: Jost-Regular;
+    line-height: 19.2px;
+    color: #E74C3C;
+}
+
+#el_7-2 {
+    font-family: Jost-Regular;
+    line-height: 24px;
+    color: #2C3E50;
+}
+
+#el_7-3 {
+    font-family: Jost-Light;
+    line-height: 32px;
+    color: #27AE60;
+}
+
+#el_8-h {
+    margin: 0;
+    font-family: Jost-Medium;
+    font-size: 28.8px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34495E;
+}
+
+#el_8-1 {
+    margin: 0;
+    font-family: Jost-Regular;
+    font-size: 17.6px;
+    line-height: 31.68px;
+    text-indent: 30px;
+    color: #2C3E50;
+}

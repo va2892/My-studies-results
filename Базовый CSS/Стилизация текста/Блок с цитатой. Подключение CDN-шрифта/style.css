@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Edu NSW ACT Foundation');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+body {
+    padding-top: 64px;
+    background: #F4F3E4;
+    margin: 0;
+}
+
+article {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 220.31px;
+}
+
+blockquote {
+    margin: 0;
+    position: absolute;
+    width: 500px;
+    height: 220.31px;
+    border-top: 1px solid #B1ACA4;
+    border-bottom: 1px solid #B1ACA4;
+}
+
+p {
+    margin: 0;
+    position: absolute;
+    width: 459px;
+    height: 188px;
+    top: 10.05px;
+    left: 41.23px;
+    font-family: 'Edu NSW ACT Foundation';
+    font-weight: 400;
+    font-size: 20.8px;
+    line-height: 31.2px;
+    vertical-align: middle;
+    color: #A43730;
+}
+
+.container {
+    position: absolute;
+    width: 40.48px;
+    height: 32px;
+    top: 28.13px;
+    left: -10px;
+}
+
+span {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 72.8px;
+    line-height: 31.2px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #A4373080;
+}

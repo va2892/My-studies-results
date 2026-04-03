@@ -1,0 +1,25 @@
+body {
+    margin: 20px;
+    background: #F0F0F0;
+    margin-bottom: 0;
+}
+
+.flag {
+    box-sizing: border-box;
+    width: 800px;
+    border: 1px solid #333333;
+}
+
+div[data-test-id="argentina"] {
+    margin-bottom: 24px;
+    height: 500px;
+    background-image: url("argentina.svg"), linear-gradient(#74ACDF 33.33%, white 33.33% 66.66%, #74ACDF 66.66% 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div[data-test-id="equador"] {
+    height: 533px;
+    background-image: url("equador.svg"), linear-gradient(#FFD100 50%, #0072CE 50% 75%, #EF3340 75% 100%);
+}

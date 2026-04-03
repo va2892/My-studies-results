@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    width: 1920px;
+    height: 1500px;
+}
+
+.pattern-block {
+    width: 500px;
+    height: 500px
+}
+
+.black-white-plates {
+    background: 
+        linear-gradient(90deg, black 50%, white 50%), 
+        linear-gradient(black 50%, white 50%);
+    background-size: 125px 125px;
+    background-position: 0 -1, 62.5px 62.5px;
+    background-blend-mode: difference;
+}
+
+.beige-plates {
+    background:
+      linear-gradient(to right, #444444 1px, transparent 1px),
+      linear-gradient(to bottom, #444444 1px, transparent 1px);
+    background-size: 25px 25px;
+    background-color: #FEFBDD;
+}
+
+.pink-green-tablecloth {
+    background: 
+        repeating-linear-gradient(45deg, 
+            rgba(250, 128, 114, 0.5) 0, 
+            rgba(250, 128, 114, 0.5) 28.2px, 
+            rgba(46, 139, 87, 0.5) 28.2px, 
+            rgba(46, 139, 87, 0.5) 56.4px
+        ),
+        repeating-linear-gradient(-45deg, 
+            rgba(250, 128, 114, 0.5) 0, 
+            rgba(250, 128, 114, 0.5) 28.2px, 
+            rgba(46, 139, 87, 0.5) 28.2px, 
+            rgba(46, 139, 87, 0.5) 56.4px
+        );
+}
