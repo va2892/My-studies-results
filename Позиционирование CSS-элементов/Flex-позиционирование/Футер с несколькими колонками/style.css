@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 30px;
+    background: linear-gradient(0deg, #181818, #181818);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;
+    height: 585px;
+    gap: 36px;
+}
+
+.footer-container {
+    display: flex;
+    width: 1220px;
+    height: 470px;
+    gap: 60px;
+}
+
+.interaction-container {
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+    gap: 23px;
+}
+
+.company { 
+    width: 240px;
+}
+
+.for-buyers {
+    width: 523px;
+    height: 296px;
+}
+
+.contact {
+    width: 337px;
+    height: 335px;
+}
+
+.label {
+    margin: 0;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.horizontal-divider {
+    min-height: 1px;
+    background: #4E4E4E;
+}
+
+.interaction {
+    display: flex;
+    flex-wrap: wrap;
+    
+    height: 403px;
+    gap: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.company a {
+    flex-basis: 240px;
+}
+
+.for-buyers a {
+    flex-basis: 253.5px;
+}
+
+.contact a {
+    
+}
+
+.icons-contact-payment-container {
+    display: flex;
+    width: 337px;
+    height: 38px;
+    justify-content: space-between;
+}
+
+.icons-contact-container {
+    display: flex;
+    width: 88px;
+    height: 38px;
+    gap: 12px;
+}
+
+.icon-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: #404040;
+    border-radius: 8px;
+}
+
+.icons-payment-container {
+    display: flex;
+    width: 116px;
+    height: 38px;
+    gap: 12px;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column;
+    width: 337px;
+    height: 142px;
+    gap: 12px;
+    border-radius: 8px;
+    padding: 16px;
+    background: #424242;
+    box-sizing: border-box;
+}
+
+.icons-download-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 305px;
+    height: 78px;
+    gap: 16px;
+}
+
+.icon-download {
+    width: 103px;
+    height: 31px;
+}
+
+.copyright-container {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;
+    height: 42px;
+    gap: 12px;
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12.29px;
+    line-height: 100%;
+    color: #808080;
+}

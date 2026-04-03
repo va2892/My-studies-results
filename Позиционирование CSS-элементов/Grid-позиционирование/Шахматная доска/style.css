@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(0deg, #222222, #222222);
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    width: 528px;
+    height: 528px;
+    border-width: 4px;
+    background: #FFFFFF;
+    border: 4px solid #444444;
+    box-shadow: 0px 8px 24px 0px #00000059;
+    box-sizing: border-box;
+}
+
+span {
+    align-self: center;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 15.88px;
+    line-height: 100%;
+    text-align: center;
+    color: #888888;
+}
+
+.white {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: #F0D9B5;
+    box-sizing: border-box;
+
+    font-size: 48px;
+    line-height: 100%;
+}
+
+.black {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: #B58863;
+    box-sizing: border-box;
+    
+    font-size: 48px;
+    line-height: 100%;
+}

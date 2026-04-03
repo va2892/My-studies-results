@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    background: linear-gradient(287.5deg, #003569 0.03%, #0058B0 99.97%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 961px;
+    height: 606px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background: #17191F;
+    box-sizing: border-box;
+}
+
+.field {
+    position: relative;
+    width: 941px;
+    height: 576px;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+}
+
+.blue-penalty-arc {
+    position: absolute;
+    top: 211.2px;
+    left: 49px;
+    width: 155.59px;
+    height: 155.60px;
+    border-radius: 77.8px;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.blue-penalty-area {
+    position: absolute;
+    top: 135.41px;
+    width: 155.59px;
+    height: 318.79px;
+    background: #17191F;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.blue-goal {
+    position: absolute;
+    top: 211.2px;
+    width: 77.24px;
+    height: 174.80px;
+    background: #17191F;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.red-penalty-arc {
+    position: absolute;
+    top: 212.2px;
+    left: 738.41px;
+    width: 155.59px;
+    height: 155.60px;
+    border-radius: 77.8px;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.red-penalty-area {
+    position: absolute;
+    top: 135.41px;
+    left: 787.41px;
+    width: 155.59px;
+    height: 318.79px;
+    background: #17191F;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.red-goal {
+    position: absolute;
+    top: 211.2px;
+    left: 865.72px;
+    width: 77.24px;
+    height: 174.80px;
+    background: #17191F;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.vertical-divider {
+    position: absolute;
+    left: 471.5px;
+    width: 2px;
+    height: 575.5px;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+}
+
+.central-circle {
+    position: absolute;
+    top: 208.2px;
+    left: 389.7px;
+    width: 165.19px;
+    height: 165.19px;
+    border-radius: 82.6px;
+    border: 1px solid #323642;
+    box-sizing: border-box;
+}
+
+div[data-test-id="player"] {
+    position: absolute;
+    width: 28.22px;
+    height: 28.8px;
+    border-radius: 14.4px;
+    z-index: 4;
+}
+
+.blue-team {
+    background: #4F7EDC;
+}
+
+.red-team {
+    background: #E74C3C;
+}
+
+.blue-goalkeeper {
+    top: 276.47px;
+    left: 18.81px;
+}
+
+.blue-sweeper {
+    top: 276.47px;
+    left: 131.73px;
+}
+
+.blue-centre-back-left {
+    top: 144px;
+    left: 169.38px;
+}
+
+.blue-centre-back-right {
+    top: 414.72px;
+    left: 169.38px;
+}
+
+.blue-wing-back-left {
+    top: 57.59px;
+    left: 282.3px;
+}
+
+.blue-wing-back-right {
+    top: 489.59px;
+    left: 282.3px;
+}
+
+.blue-centre-midfield-left {
+    top: 201.59px;
+    left: 282.3px;
+}
+
+.blue-centre-midfield-right {
+    top: 357.11px;
+    left: 282.3px;
+}
+
+.blue-centre-forward-left {
+    top: 126.72px;
+    left: 404.63px;
+}
+
+.blue-centre-forward-right {
+    top: 420.47px;
+    left: 404.63px;
+}
+
+.blue-centre-forward {
+    top: 276.47px;
+    left: 404.63px;
+}
+
+.red-goalkeeper {
+    top: 276.47px;
+    left: 893.97px;
+}
+
+.red-sweeper {
+    top: 276.47px;
+    left: 781.04px;
+}
+
+.red-centre-back-left {
+    top: 414.72px;
+    left: 743.4px;
+}
+
+.red-centre-back-right {
+    top: 144px;
+    left: 743.4px;
+}
+
+.red-wing-back-left {
+    top: 489.59px;
+    left: 630.47px;
+}
+
+.red-wing-back-right {
+    top: 57.59px;
+    left: 630.47px;
+}
+
+.red-centre-midfield-left {
+    top: 357.11px;
+    left: 630.47px;
+}
+
+.red-centre-midfield-right {
+    top: 201.59px;
+    left: 630.47px;
+}
+
+.red-centre-forward-left {
+    top: 420.47px;
+    left: 517.57px;
+}
+
+.red-centre-forward-right {
+    top: 126.72px;
+    left: 517.57px;
+}
+
+.red-centre-forward {
+    top: 276.47px;
+    left: 517.57px;
+}
