@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>Please fill out this form to get in touch with us.</p>
+    <form method="POST" action="#" data-test-id="contact-form">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>First Name (required): <input type="text" id="firstName" name="firstName" required data-test-id="contact-form-firstName"></label>
+            <br>
+            <br>
+            <label>Last Name (required): <input type="text" id="lastName" name="lastName" required data-test-id="contact-form-lastName"></label>
+            <br>
+            <br>
+            <label>Email Address (required): <input type="email" id="email" name="email" required data-test-id="contact-form-email"></label>
+            <br>
+            <br>
+            <label>Phone Number: <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" data-test-id="contact-form-phone"></label>
+            <br>
+            <br>
+            <label>Message (required): <br><textarea id="message" name="message" rows="5" cols="50" required data-test-id="contact-form-message" placeholder="Please enter your message here..."></textarea></label>
+            <br>
+            <br>
+            <label><input type="checkbox" id="newsletter" name="newsletter" data-test-id="contact-form-newsletter"> Subscribe to our newsletter</label>
+            <br>
+            <br>
+            <button type="submit" data-test-id="contact-form-submit-btn">Send Message</button>
+            <button type="reset" data-test-id="contact-form-reset-btn">Clear Form</button>
+        </fieldset>
+    </form>
+</body>
+</html>

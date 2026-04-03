@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Create Your Account</h1>
+    <p>Join our community by filling out the registration form below.</p>
+    <form method="POST" action="#" data-test-id="registration-form">
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">
+                Username (required):
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    pattern="[A-Za-z0-9_]{3,20}"
+                    title="Username must be 3-20 characters long and contain only letters, numbers, and underscores"
+                    data-test-id="registration-form-username"
+                >
+                <small>3-20 characters, letters, numbers, and underscores only</small>
+            </label>
+            <br>
+            <br>
+            <label for="email">
+                Email Address (required):
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    data-test-id="registration-form-email"
+                >
+            </label>
+            <br>
+            <br>
+            <label for="password">
+                Password (required):
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="8"
+                    pattern="[A-Za-z0-9]{8,}"
+                    title="Password must contain at least 8 characters with uppercase, lowercase, and number"
+                    data-test-id="registration-form-password"
+                >
+                <small>At least 8 characters with uppercase, lowercase, and number</small>
+            </label>
+            <br>
+            <br>
+            <label for="confirmPassword">
+                Confirm Password (required):
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                    data-test-id="registration-form-confirmPassword"
+                >
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="birthdate">
+                Date of Birth:
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    min="1900-01-01"
+                    max="2010-12-31"
+                    data-test-id="registration-form-birthdate"
+                >
+            </label>
+            <br>
+            <br>
+            <label for="age">
+                Age:
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="12"
+                    max="120"
+                    step="1"
+                    data-test-id="registration-form-age"
+                >
+            </label>
+            <br>
+            <br>
+            <label for="country">
+                Country (required):
+                <select
+                    id="country"
+                    name="country"
+                    required
+                    data-test-id="registration-form-country"
+                >
+                    <option value="">--Please choose a country--</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="jp">Japan</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Interests (select all that apply):</legend>
+                <label for="tech">
+                    <input
+                        id="tech"
+                        type="checkbox"
+                        name="interests"
+                        value="technology"
+                        data-test-id="registration-form-tech"
+                    >
+                    Technology
+                </label>
+                <br>
+                <label for="sports">
+                    <input
+                        id="sports"
+                        type="checkbox"
+                        name="interests"
+                        value="sports"
+                        data-test-id="registration-form-sports"
+                    >
+                    Sports
+                </label>
+                <br>
+                <label for="music">
+                    <input
+                        id="music"
+                        type="checkbox"
+                        name="interests"
+                        value="music"
+                        data-test-id="registration-form-music"
+                    >
+                    Music
+                </label>
+                <br>
+                <label for="travel">
+                    <input
+                        id="travel"
+                        type="checkbox"
+                        name="interests"
+                        value="travel"
+                        data-test-id="registration-form-travel"
+                    >
+                    Travel
+                </label>
+                <br>
+                <label for="cooking">
+                    <input
+                        id="cooking"
+                        type="checkbox"
+                        name="interests"
+                        value="cooking"
+                        data-test-id="registration-form-cooking"
+                    >
+                    Cooking
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Educational Background:</legend>
+                <label for="high-school-diploma">
+                    <input
+                        id="high-school-diploma"
+                        type="radio"
+                        name="education"
+                        value="high-school-diploma"
+                        data-test-id="registration-form-diploma"
+                    >
+                    High School Diploma
+                </label>
+                <label for="bachelor">
+                    <input
+                        id="bachelor"
+                        type="radio"
+                        name="education"
+                        value="bachelor"
+                        data-test-id="registration-form-bachelor"
+                    >
+                    Bachelor's Degree
+                </label>
+                <label for="master">
+                    <input
+                        id="master"
+                        type="radio"
+                        name="education"
+                        value="master"
+                        data-test-id="registration-form-master"
+                    >
+                    Master's Degree
+                </label>
+                <label for="professional">
+                    <input
+                        id="professional"
+                        type="radio"
+                        name="education"
+                        value="professional"
+                        data-test-id="registration-form-professional"
+                    >
+                    Professional Degree
+                </label>
+            </fieldset>
+        </fieldset>
+        <br>    
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <label for="terms">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                    data-test-id="registration-form-terms"
+                >
+                I agree to the Terms of Service and Privacy Policy (required)
+            </label>
+            <br>
+            <br>
+            <label for="marketing">
+                <input
+                    type="checkbox"
+                    id="marketing"
+                    name="marketing"
+                    data-test-id="registration-form-marketing"
+                >
+                I would like to receive marketing emails
+            </label>
+        </fieldset>
+        <br>
+        <button type="submit" data-test-id="registration-form-submit-btn">Create Account</button>
+        <button type="reset" data-test-id="registration-form-reset-btn">Clear All Fields</button>
+    </form>
+    <script>
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        const passwordInput = document.getElementById('password');
+        
+        confirmPasswordInput.addEventListener('input', function() {
+          const password = passwordInput.value;
+          const confirmPassword = this.value;
+        
+          if (password !== confirmPassword) {
+            this.setCustomValidity("Passwords don't match");
+          } else {
+            this.setCustomValidity('');
+          }
+        });
+    </script>
+</body>
+</html>

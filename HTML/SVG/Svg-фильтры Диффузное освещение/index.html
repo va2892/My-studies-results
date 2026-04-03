@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <svg width="440" height="140" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="spot">
+                <feDiffuseLighting in="SourceGraphic" result="light" lighting-color="white">
+                    <fePointLight x="150" y="60" z="20" />
+                </feDiffuseLighting>
+                <feComposite k1="1" k2="0" k3="0" k4="0" operator="arithmetic" in="light" in2="SourceGraphic"/>
+            </filter>
+            <filter id="remote">
+                <feDiffuseLighting in="SourceGraphic" result="light" lighting-color="white">
+                    <feDistantLight azimuth="240" elevation="20"/>
+                </feDiffuseLighting>
+                <feComposite k1="1" k2="0" k3="0" k4="0" operator="arithmetic" in="light" in2="SourceGraphic"/>
+            </filter>
+            <filter id="spotlight">
+                <feDiffuseLighting in="SourceGraphic" result="light" lighting-color="white">
+                    <feSpotLight x="360" y="5" z="30" limitingConeAngle="20" pointsAtX="390" pointsAtY="80" pointsAtZ="0"/>
+                </feDiffuseLighting>
+                <feComposite k1="1" k2="0" k3="0" k4="0" operator="arithmetic" in="light" in2="SourceGraphic"/>
+            </filter>
+        </defs>
+        <text x="60"  y="22" text-anchor="middle">No Light</text>
+        <text x="170" y="22" text-anchor="middle">fePointLight</text>
+        <text x="280" y="22" text-anchor="middle">feDistantLight</text>
+        <text x="390" y="22" text-anchor="middle">feSpotLight</text>
+        <circle cx="60"  cy="80" r="50" fill="green"/>
+        <circle cx="170" cy="80" r="50" fill="green" filter="url(#spot)"/>
+        <circle cx="280" cy="80" r="50" fill="green" filter="url(#remote)"/>
+        <circle cx="390" cy="80" r="50" fill="green" filter="url(#spotlight)"/>
+    </svg>
+</body>
+</html>

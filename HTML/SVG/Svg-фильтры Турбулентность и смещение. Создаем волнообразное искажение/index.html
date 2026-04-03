@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="filter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="turbulence"/>
+                <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="50"/>
+            </filter>
+        </defs>
+        <ellipse cx="100" cy="75" rx="70" ry="50" fill="gold" filter="url(#filter)"/>
+    </svg>
+</body>
+</html>

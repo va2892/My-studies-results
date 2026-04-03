@@ -1,0 +1,93 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Синий градиент -->
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a90e2" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4a90e2" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Красный градиент -->
+    <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Стрелка -->
+    <marker id="arrow" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+
+    <style>
+      .grid { stroke:#eee; stroke-width:1 }
+      .axis { stroke:#333; stroke-width:3 }
+      .label { font-family:Arial; font-size:14px; fill:#333 }
+      .pointText { font-family:Arial; font-size:14px; fill:#444 }
+    </style>
+  </defs>
+
+  <!-- Сетка -->
+  <g>
+    <!-- вертикаль -->
+    <line x1="100" y1="0" x2="100" y2="400" class="grid"/>
+    <line x1="200" y1="0" x2="200" y2="400" class="grid"/>
+    <line x1="300" y1="0" x2="300" y2="400" class="grid"/>
+    <line x1="400" y1="0" x2="400" y2="400" class="grid"/>
+    <line x1="500" y1="0" x2="500" y2="400" class="grid"/>
+
+    <!-- горизонталь -->
+    <line x1="0" y1="300" x2="600" y2="300" class="grid"/>
+    <line x1="0" y1="200" x2="600" y2="200" class="grid"/>
+    <line x1="0" y1="100" x2="600" y2="100" class="grid"/>
+  </g>
+
+  <!-- Оси -->
+  <line x1="50" y1="350" x2="580" y2="350" class="axis" marker-end="url(#arrow)"/>
+  <line x1="50" y1="350" x2="50" y2="20"  class="axis" marker-end="url(#arrow)"/>
+
+  <text x="585" y="370" class="label">x</text>
+  <text x="30" y="25" class="label">y</text>
+
+  <!-- Область под синей линией -->
+  <path d="
+    M50 100
+    L150 100
+    L350 200
+    L550 350
+    L50 350 Z"
+    fill="url(#blueGrad)"/>
+
+  <!-- Область под красной линией -->
+  <path d="
+    M50 350
+    L350 200
+    L550 100
+    L550 350 Z"
+    fill="url(#redGrad)"/>
+
+  <!-- Синяя линия -->
+  <path d="M50 100 L150 100 L350 200 L550 350"
+        stroke="#4a90e2" stroke-width="4" fill="none"/>
+
+  <!-- Красная линия -->
+  <path d="M50 350 L350 200 L550 100"
+        stroke="#e74c3c" stroke-width="4" fill="none"/>
+
+  <!-- Пунктир -->
+  <line x1="50" y1="200" x2="350" y2="200"
+        stroke="#e74c3c" stroke-dasharray="6,4"/>
+  <line x1="350" y1="350" x2="350" y2="200"
+        stroke="#e74c3c" stroke-dasharray="6,4"/>
+
+  <!-- Точки -->
+  <circle cx="150" cy="100" r="7" fill="#9b59b6"/>
+  <circle cx="350" cy="200" r="8" fill="#e74c3c"/>
+  <circle cx="550" cy="300" r="7" fill="#9b59b6"/>
+
+  <!-- Подписи точек -->
+  <text x="165" y="95" class="pointText">(1; 5)</text>
+  <text x="365" y="195" class="pointText">(5; 3)</text>
+  <text x="565" y="295" class="pointText">(9; 1)</text>
+
+</svg>
