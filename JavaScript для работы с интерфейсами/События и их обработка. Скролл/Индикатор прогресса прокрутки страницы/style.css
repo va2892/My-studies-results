@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"');
+
+* {
+	margin: 0;
+}
+
+body {
+	padding-top: 88.11px;
+	padding-bottom: 82.5px;
+	display: flex;
+	justify-content: center;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	width: 1090px;
+	height: 4568px;
+	gap: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Poppins;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 54px;
+	color: #2C303A;
+}
+
+h2 {
+	font-size: 27px;
+	line-height: 41px;
+}
+
+h3 {
+	font-size: 21.1px;
+	line-height: 32px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+h5 {
+	font-size: 14.9px;
+	line-height: 22px;
+}
+
+h6 {
+	font-size: 12.1px;
+	line-height: 18px;
+}
+
+p {
+	font-family: Poppins;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #2C303A;
+}
+
+.scroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 25px;
+	background: linear-gradient(90.43deg, #84FAB0 0%, #8FD3F4 100%);
+}

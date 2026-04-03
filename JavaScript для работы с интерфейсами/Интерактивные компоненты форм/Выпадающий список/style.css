@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+* {
+	margin: 0;
+}
+
+body {
+	padding: 48px;
+	height: 100vh;
+	background: linear-gradient(122.01deg, #1A1A2E 0%, #16213E 50%, #0F4C75 100%);
+	box-sizing: border-box;
+}
+
+.select {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 280px;
+	height: 54px;
+	border-radius: 12px;
+	padding-top: 18px;
+	padding-right: 18px;
+	padding-bottom: 18px;
+	padding-left: 22px;
+	background: #F8F9FA;
+	border: 2px solid #2196F3;
+	box-shadow: 0px 4px 16px 0px #00000026;
+	box-sizing: border-box;
+
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 100%;
+	letter-spacing: 0.25px;
+	color: #212529;
+}
+
+.options-container {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	top: 109px;
+	left: 48px;
+	width: 280;
+	height: 146.28px;
+	border-radius: 12px;
+	background: #FFFFFF;
+	border: 2px solid #2196F3;
+	box-shadow: 0px 4px 16px 0px #00000026;
+	backdrop-filter: blur(10px);
+	box-sizing: border-box;
+}
+
+.option {
+	width: 276px;
+	height: 46px;
+	padding-top: 14px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	border-bottom: 1px solid #E0E0E04D;
+	box-sizing: border-box;
+}
+
+.option:hover {
+	background: #E3F2FD;
+	color: #1976D2;
+}
+
+.active {
+	background: #E3F2FD;
+	color: #1976D2;
+}
+
+.first {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.last {
+	height: 53px;
+	border: none;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.select[aria-expanded="true"] .options-container {
+	display: flex;
+}
+
+.select[aria-expanded="true"] svg {
+	transform: rotate(180deg);
+}

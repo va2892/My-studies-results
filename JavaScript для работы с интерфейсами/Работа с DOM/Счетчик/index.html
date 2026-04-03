@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="counter-container">
+        <header>
+            <div class="introductory-container">
+                <h2 class="name">Counter</h2>
+                <p class="desc">A precise, minimal counter with quick steps.</p>
+            </div>
+            <button class="reset" data-test-id="btn-reset">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0V0.941175C11.8927 0.941175 15.0588 4.10729 15.0588 8C15.0588 11.8927 11.8927 15.0588 8 15.0588C4.10729 15.0588 0.941175 11.8927 0.941175 8C0.941175 5.77412 1.99623 3.70071 3.76471 2.36894V5.64706H4.70588V0.941175H0V1.88235H2.85742C1.05882 3.39483 0 5.62259 0 8C0 12.4113 3.58871 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58871 12.4113 0 8 0Z" fill="#EBEBEB"/>
+                </svg>
+                <span>Reset</span>
+            </button>
+        </header>
+        <div class="horizontal-divider"></div>
+        <main>
+            <div class="amount-container">
+                <h4 class="explanation">Current value</h4>
+                <p class="amount" data-test-id="cur-value">0</p>
+            </div>
+            <div class="panel-container">
+                <button class="change-button subtract" data-test-id="btn-minus-3">-3</button>
+                <button class="change-button subtract" data-test-id="btn-minus-2">-2</button>
+                <button class="change-button subtract" data-test-id="btn-minus-1">-1</button>
+                <button class="change-button add" data-test-id="btn-plus-1">+1</button>
+                <button class="change-button add" data-test-id="btn-plus-2">+2</button>
+                <button class="change-button add" data-test-id="btn-plus-3">+3</button>
+            </div>
+            <div class="set-container">
+                <form class="form">
+                    <p class="label">Set value</p>
+                    <div class="input-container">
+                        <input type="number" min="-1e9" max="1e9" placeholder="Enter an integer..." required class="set-amount" name="input-value" data-test-id="input-value">
+                        <button class="apply" data-test-id="btn-apply">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66666 8H13.3333M7.99999 2.66667V13.3333" stroke="#EBEBEB" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Apply</span>
+                        </button>
+                    </div>
+                    <p class="note">Press Enter to apply. Values outside ±1e9 are clamped</p>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

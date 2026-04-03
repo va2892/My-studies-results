@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <button class="open" aria-haspopup="dialog" data-test-id="btn-open-modal"><a>Show More Info</a></button>
+    <div class="overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-head" data-test-id="modal">
+        <div class="dialog">
+            <h4 id="modal-head">More Information</h4>
+            <p>
+                Thank you for your interest! To stay updated with our latest news and
+                offers, simply bookmark this page or follow us on social media. We
+                greatly appreciate your engagement and support!
+            </p>
+            <button class="close" aria-label="Close modal" data-test-id="btn-close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 13.1725L9.26 7.48812L14.9425 1.75437L13.1725 0L7.49125 5.73688L1.75625 0.056875L0 1.81313L5.74125 7.50375L0.056875 13.2437L1.81313 15L7.50812 9.255L13.2456 14.9425L15 13.1725Z" fill="#444444"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
